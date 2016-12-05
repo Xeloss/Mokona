@@ -1,0 +1,200 @@
+.nav-side-menu {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #fff;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+    text-decoration: underline;
+}
+
+#navigation li.line {
+    border-left: 1px solid #112e6f;
+}
+
+.navbar-nav > li > a {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.navbar-nav > li > a.selected {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    color: #fff;
+}
+
+/* Menu */
+.nav-side-menu .nav-pills > li > a {
+    border-radius: 0;
+    padding: 7px 10px;
+}
+
+.nav-side-menu .nav-pills > li.active > a, .nav-pills > li.active > a:hover {
+    color: #fff;
+    background-color: #1e4bf0;
+}
+
+.nav-side-menu .nav-stacked {
+    border: 1px solid #ccc;
+}
+
+.nav-side-menu .nav-stacked > li {
+    border-bottom: 1px solid #ccc;
+}
+
+.nav-side-menu .nav-stacked > li:last-child {
+    border-bottom: 0px solid #ccc;
+}
+
+.nav-side-menu .nav-pills > li {
+    position: relative;
+    margin: 0;
+}
+
+.nav-side-menu .nav-pills > li.active .arrow {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background-image: url(/Images/box_arrow.png);
+    background-repeat: no-repeat;
+    right: -12px;
+    top: 12px;
+}
+
+ul.nav.language {
+    margin-bottom: 20px;
+}
+
+ul.nav.language .active {
+    border: 2px solid #FFF;
+}
+
+/* Pagination */
+nav.paginador {
+    text-align: center;
+    clear: both;
+}
+
+nav.paginador .pagination {
+    margin: 0;
+}
+
+.pagination > li:last-child > a,
+.pagination > li:first-child > a {
+    border-radius: 0;
+    font-size: 2em;
+    position: relative;
+    top: -11px;
+}
+
+.pagination > li:last-child > a:active,
+.pagination > li:last-child > a:focus,
+.pagination > li:last-child > a:hover,
+.pagination > li:first-child > a:active,
+.pagination > li:first-child > a:focus,
+.pagination > li:first-child > a:hover {
+    color: #1e4bf0;
+    background: transparent;
+}
+
+.pagination > li > a {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.pagination > .disabled > a {
+    border-color: #fff;
+}
+
+.pagination > li > a {
+    color: #5e6161;
+    border: 2px solid #fff;
+}
+
+.pagination > .active > a {
+    color: #5e6161;
+    background-color: #fff;
+    border: 2px solid #1e4bf0;
+}
+
+.pagination > .active > a:hover {
+    background-color: #1e4bf0;
+    border-color: #1e4bf0;
+}
+
+.menu {
+    margin: 10px 0 20px;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #666666;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #CCC;
+}
+
+ul.menu_Mokona {
+    list-style: none;
+    margin-bottom: 0;
+    overflow: hidden;
+    padding-left: 0;
+}
+
+ul.menu_Mokona i {
+    font-size: 45px;
+    color: #1e4bf0;
+    vertical-align: middle;
+}
+
+ul.menu_Mokona li {
+    display: inline-block;
+    cursor: pointer;
+    vertical-align: middle;
+    position: relative;
+    border-right: 1px solid #CCC;
+}
+
+ul.menu_Mokona li:last-child {
+    border-right: 0;
+}
+
+ul.menu_Mokona li:hover, ul.menu_Mokona li.active {
+    background-color: #1e4bf0;
+    color: #fff !important;
+}
+
+ul.menu_Mokona li.active i, ul.menu_Mokona li:hover i {
+    color: #FFFFFF;
+}
+
+ul.menu_Mokona li:hover .num_menu {
+    color: #fff;
+}
+
+ul.menu_Mokona li img {
+    margin-top: 0;
+    vertical-align: inherit;
+}
+
+ul.menu_Mokona .num > span {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+ul.menu_Mokona .num > span:last-child {
+    font-weight: 200;
+}
+
+ul.menu_Mokona li.selected {
+    background-color: #666666;
+    color: #fff;
+}
+
+ul.menu_Mokona li.selected .num_menu {
+    color: #fff;
+}

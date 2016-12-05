@@ -1,0 +1,54 @@
+﻿@model Mokona.FrontEnd.Models.ErrorMessage
+@{
+    Layout = null;
+}
+
+@Scripts.Render("~/bundles/jquery")
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('.viewErrorDetails').click(function () {
+            $(this).siblings('.contException').show();
+            $(this).parent().find('.exceptionDetails').toggle('slow');
+        });
+    });
+</script>
+
+<div class="layout errorMessage">
+    <!-- Cont -->
+    <div class="cont">
+        <div class="contGral">
+            <div class="titleGral">
+                <div class="titleGralCont clearfix">
+                    <h2>
+                        @Model.Title
+                    </h2>
+                </div>
+            </div>
+            @Html.Raw(Model.Description)
+            @if (Model.ShowTechnicalErrorDetails)
+            {
+                <div class="exceptionContainer">
+                    <a href="javascript:;" class="viewErrorDetails">Show Techincal Exception Details...</a>
+                    <div class="contException" style="display: none;">
+                        <div class="exceptionDetails" style="display: none;">
+                            <pre>
+            @Model.StackTrace
+            @{
+                for (var e = Model.Exception; e != null; e = e.InnerException)
+                {
+                            <br />
+                @e.Message
+                            <br />
+                @e.StackTrace
+                }
+            }
+                                </pre>
+                        </div>
+                    </div>
+                </div>
+                <br />
+            }
+        </div>
+    </div>
+</div>

@@ -1,0 +1,78 @@
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    background-image: url(/Images/bg_interno.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: top;
+    /* Margin bottom by footer height */
+    margin-bottom: 80px;
+}
+
+body.login {
+    background-image: url(/Images/bg_login.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    color: #fff;
+    padding-top: 20px;
+    background-color: #1e4bf0;
+}
+
+body > .container {
+    background-color: #fff;
+    margin-top: 60px;
+    padding: 30px;
+}
+
+body.login > .container {
+    padding: 10px 15px 0;
+    background-color: transparent;
+}
+
+body.login a {
+    color: #fff;
+    margin-top: 20px;
+    display: block;
+}
+
+body.login .navbar-default .navbar-nav > li > a {
+    color: #fff;
+    display: inline-block;
+    transition: all 0.5s ease;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Poppins", sans-serif;
+}
+
+h1 {
+    color: #fff;
+    font-weight: 600;
+}
+
+h2 {
+    color: #1e4bf0;
+    font-size: 28px;
+    font-weight: 600;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+a {
+    color: #696969;
+}
+
+form a {
+    font-size: 12px;
+    color: #000;
+}
+
+textarea {
+    resize: vertical;
+}

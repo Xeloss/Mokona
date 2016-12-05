@@ -1,0 +1,169 @@
+button.btn-info {
+    background-color: transparent;
+    border-radius: 0;
+    color: #1e4bf0;
+    border: 0;
+}
+
+button.btn-info:hover,
+button.btn-info:focus,
+button.btn-info:active {
+    background-color: transparent;
+    color: #000;
+}
+
+button.btn-default {
+    background-color: transparent;
+    border-radius: 0;
+    color: #1e4bf0;
+    border: 2px solid #fff;
+    padding: 4px 25px;
+}
+
+button.btn-Mokona {
+    background-color: #eeeeee;
+    color: #1e4bf0;
+}
+
+button.btn-primary {
+    background-color: #1e4bf0;
+    color: #fff;
+}
+
+button.btn-Mokona,
+button.btn-primary.btn-filter-action {
+    padding: 4px 27px;
+    font-size: 14px;
+    margin-top: 22px;
+}
+
+button.btn-reject {
+    background-color: #b02727;
+    color: #fff;
+}
+
+button.btn-reject:hover,
+button.btn-reject:focus,
+button.btn-reject:active {
+    background-color: #761c19;
+    color: #fff;
+}
+
+button.btn-approve {
+    background-color: #aacf39;
+    color: #fff;
+}
+
+button.btn-approve:hover,
+button.btn-approve:focus,
+button.btn-approve:active {
+    background-color: #4cae4c;
+    color: #fff;
+}
+
+button.btn-reject.btn-abm-action,
+button.btn-approve.btn-abm-action {
+    padding: 4px 27px;
+    font-size: 14px;
+}
+
+button.btn-abm-action.disabled {
+    background: #777777;
+    color: #cccccc;
+}
+
+button.btn-new {
+    background-color: #0066FF;
+    color: #fff;
+}
+
+button.btn-new:hover,
+button.btn-new:focus,
+button.btn-new:active {
+    background-color: #204d74;
+    color: #fff;
+}
+
+.btn {
+    transition: all 0.5s ease;
+}
+
+.btn.btn-link {
+    color: #666;
+}
+
+.input-group-addon,
+.btn {
+    border-radius: 0;
+}
+
+.btn-action {
+    background-color: transparent;
+    border: 0;
+}
+
+.btn-action > .fa {
+    color: #1e4bf0;
+    border: 1px dotted #ccc;
+    padding: 7px 7px 5px;
+}
+
+.btn-action.disabled,
+.btn-action.disabled > .fa {
+    color: #999;
+}
+
+.btnAction {
+    position: absolute;
+    width: 80px;
+    bottom: 15px;
+    right: 15px;
+    overflow: hidden;
+}
+
+.btnAction .approve {
+    width: 36px;
+    height: 36px;
+    background-image: url(/Images/ic_ap_pendientes.png);
+    background-repeat: no-repeat;
+    float: right;
+    zoom: 0.9;
+}
+
+.btnAction .refuse {
+    width: 36px;
+    height: 36px;
+    background-image: url(/Images//ic_rech_pendientes.png);
+    background-repeat: no-repeat;
+    float: left;
+    zoom: 0.9;
+}
+
+.nav-dest.btn.btn-link {
+    border: 2px solid #fff;
+    margin-right: 30px;
+}
+
+.nav-dest.btn.btn-link.selected,
+.nav-dest.btn.btn-link:hover {
+    background: #FFFFFF;
+    color: #1e4bf0;
+    text-decoration: none;
+}
+
+.nav-side-menu .btn {
+    width: 100%;
+    color: #1e4bf0;
+    margin-bottom: 10px;
+}
+
+/* Icons */
+
+i.fa-exclamation-circle {
+    color: #843534;
+}
+
+img.fa-excel {
+    width: 18px;
+    margin-right: 5px;
+}

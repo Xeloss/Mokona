@@ -1,0 +1,300 @@
+/*  This are included in BundleConfig.cs
+	@import url('_layout.css');
+	@import url('_tables.css');
+	@import url('_forms.css');
+	@import url('_navigation.css');
+	@import url('_buttons.css');
+	@import url('_modal.css');
+	@import url('_scrollbars.css'); */
+
+.header {
+    margin-top: 25px;
+}
+
+.header .navbar {
+    margin-bottom: 0;
+}
+
+.log {
+    padding-left: 25px;
+    float: left;
+    font-size: 15px;
+    color: #fff;
+    margin-top: 12px;
+}
+
+.log a {
+    font-size: 12px;
+    color: #fff;
+    text-transform: capitalize;
+}
+
+.num_menu {
+    padding: 10px 8px;
+    font-size: 35px;
+    text-align: left;
+    font-weight: 400;
+}
+
+.ur {
+    padding-top: 25px;
+    line-height: 1;
+    font-size: 13px;
+}
+
+.row-boxes > .col-md-4:last-child {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.row-boxes > .col-md-4:first-child {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.row-boxes > .col-md-4 {
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+.boxes {
+    margin-top: 10px;
+}
+
+.box {
+    background-color: #d8d9dd;
+    padding: 30px 20px;
+    margin: 7px 0;
+    position: relative;
+    color: #666;
+}
+
+.box img {
+    zoom: 0.85;
+}
+
+.box .info {
+    float: right;
+    width: 81%;
+}
+
+.box .info span {
+    display: block;
+}
+
+.box .id {
+    font-size: 14px;
+}
+
+.box .id span {
+    font-weight: bold;
+    display: inline;
+}
+
+.box .doc {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.box .c_costos,
+.box .monto_total {
+    font-size: 14px;
+}
+
+.box .monto_total {
+    margin-bottom: 10px;
+}
+
+.box .ver_detalle {
+    font-size: 12px;
+    color: #1e4bf0;
+    text-transform: capitalize;
+}
+
+.box .ver_detalle:focus,
+.box .ver_detalle:hover {
+    color: #1e4bf0;
+}
+
+.box .precio {
+    font-size: 28px;
+    color: #333;
+    font-weight: 600;
+}
+
+.box.selected {
+    outline: 3px solid #1e4bf0;
+    box-shadow: 0px 0px 12px #1e4bf0;
+}
+
+.title1 {
+    font-size: 28px;
+    color: #1e4bf0;
+}
+
+h2.title {
+    margin-top: 0;
+}
+
+.titleLogin {
+    margin-bottom: 30px;
+}
+
+h6.signUpLinks a {
+	display: inline;
+	margin: initial
+}
+
+a.add {
+    background-color: #1e4bf0;
+    float: right;
+    display: inline-block;
+    width: 34px;
+    height: 34px;
+    position: relative;
+}
+
+a.add img {
+    position: absolute;
+    top: 7px;
+    left: 7px;
+}
+
+.secondary {
+    color: #8d4eda;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.margin-top-30 {
+    margin-top: 20px;
+}
+
+.margin-top-50 {
+    margin-top: 50px;
+}
+
+a.guardar {
+    margin-right: 10px;
+}
+
+.action-bar {
+    margin-top: 15px;
+}
+
+.action-bar button {
+    vertical-align: top;
+}
+
+.action-bar button.btn-action:first-child {
+    padding-left: 0;
+}
+
+.action-bar .btn {
+    margin: 0 7px;
+}
+
+.action-bar .separator {
+    height: 30px;
+    width: 1px;
+    display: inline-block;
+    background-color: #cccccc;
+    position: relative;
+    top: 0;
+}
+
+.rendiciones #selectEmpleado {
+    text-transform: capitalize;
+}
+
+.rendiciones .table-responsive {
+    margin-top: 0;
+}
+
+.table-responsive td {
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+#dashboard .rendiciones-actions {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.no-margin-right,
+.reporte-general .form-group:last-child,
+.aprobaciones .form-group:last-child,
+#rendicion .rendiciones-actions .btn-abm-action,
+#dashboard .rendiciones-actions .btn-abm-action {
+    margin-right: 0 !important;
+}
+
+#rendiciones-selected {
+    text-align: right;
+    position: relative;
+    top: -17px;
+}
+
+/* Estructuras */
+.list-group-item.active,
+.list-group-item.active:hover,
+.list-group-item.active:focus {
+    background-color: #0066FF;
+    border-color: #0066FF;
+}
+
+.list-group-item span.fa-caret-right {
+    margin-top: 4px;
+}
+
+.dropdown-menu-Mokona li:not(.divider) {
+    display: block;
+    padding: 5px;
+    font-weight: normal;
+    cursor: default;
+}
+
+.dropdown-menu-Mokona li .form-control {
+    width: 188px;
+}
+
+.dropdown-menu-Mokona li .btn-abm-action {
+    height: 30px;
+    width: 30px;
+    padding: 4px;
+}
+
+#rendicion h2.title {
+    margin-bottom: 0;
+}
+
+/* Footer */
+.footer {
+    color: #707070;
+    padding-bottom: 10px;
+    margin-top: 20px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer */
+    height: 80px;
+    background-color: #2b2b2b;
+}
+
+.footer p {
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+.footer p.dev {
+    margin-top: 15px;
+}
+
+.footer p.site {
+    margin-top: 30px;
+}
+
+.footer .text-right.site a,
+.footer a {
+    color: #707070;
+}

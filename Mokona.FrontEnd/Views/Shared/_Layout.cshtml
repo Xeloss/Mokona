@@ -1,0 +1,114 @@
+﻿@using Resources
+@using Mokona.Core.Security
+
+<html lang="es">
+<head>
+
+    <link rel="icon" href="~/favicon.ico?v=1.0" type="image/x-icon" />
+    <link rel="shortcut icon" href="~/favicon.ico?v=1.0" type="image/x-icon" />
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    
+    <title>@Resources.Layout_Title</title>
+
+    @Styles.Render("~/Content/layout")
+
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Poppins:400,600' rel='stylesheet' type='text/css'>
+
+    @RenderSection("styles", false)
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body id="dashboard" ng-app="MokonaApp">
+
+    <div id="undefined-sticky-wrapper" class="sticky-wrapper" style="height: 52px;">
+        <header class="header">
+            <div class="sticky-wrapper">
+                <div role="navigation" class="navbar navbar-default">
+                    <div class="container">
+                        <div class="navbar-header">
+                            <a href="javascript:;" class="navbar-brand scroll-to"><img src="~/Images/logo-Mokona.png" alt=""></a>
+                        </div>
+
+                        <div id="navigation">
+                            @if ((this.User as UserPrincipal) != null)
+                            {
+                                <span class="log">@string.Format(Resources.Layout_LabelGreetings, ((UserPrincipal)this.User).FirstName) <br><a href="/Login/Logout">@Resources.Layout_LinkSignOut</a></span>
+                            }
+                            else
+                            {
+                                <span class="log"><a href="/Login/Index">@Resources.Layout_LinkSignIn</a></span>
+                            }
+                            <ul class="nav navbar-nav pull-right language" ng-controller="languageController">
+                                <li>
+                                    <a href="javascript:;" ng-class="{ active: state.currentLanguage == 'es' }" ng-click="events.changeLanguage('es')" title="Español">ES</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" ng-class="{ active: state.currentLanguage == 'en' }" ng-click="events.changeLanguage('en')" title="English">EN</a>
+                                </li>
+                            </ul>
+
+                            <div class="clearfix"></div>
+
+                            @if ((this.User as UserPrincipal) != null)
+                            {
+                                <ul class="nav navbar-nav navbar-right">
+                                    <li class=""><a href="/#/">@Resources.Layout_LinkMyEMokona</a></li>
+                                    <li class="line"><a href="/#/Settings/ExpenseTypes">@Resources.Layout_LinkSettings</a></li>
+                                    <li class="line"><a href="/#/Reports/General">@Resources.Layout_LinkReports</a></li>
+                                </ul>
+                            }
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </div>
+
+    <div class="container">
+        @RenderBody()
+    </div>
+
+    <!-- /.container -->
+
+    <footer class="footer">
+        <div class="container">
+            <div class="col-md-6">
+                <p class="dev">@Resources.General_DevelopBy <img src="~/Images/logo_footer.png" alt=""></p>
+                <p class="rightRes">@Resources.General_AllRightReserved</p>
+            </div>
+            <div class="col-md-6">
+                <p class="text-right site"><a href="http://www.lagash.com" target="_blank">www.lagash.com</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    @*@Scripts.Render("~/script/externals")*@
+
+    @Scripts.Render("~/script/externals")
+    @Scripts.Render("~/script/common")
+    @Scripts.Render("~/script/services")
+    @Scripts.Render("~/script/directives")
+    @Scripts.Render("~/script/controllers")
+
+    @RenderSection("scripts", false)
+
+</body>
+</html>

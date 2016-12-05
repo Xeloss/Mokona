@@ -1,0 +1,89 @@
+table {
+    margin-top: 20px;
+}
+
+table td,
+table th {
+    vertical-align: middle !important;
+}
+
+table label {
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+table > tbody > tr > td,
+table tr > td,
+table tr > th {
+    border-top: 0 !important;
+}
+
+table .btn.btn-default {
+    font-size: 13px;
+}
+
+table td .actions {
+    width: 80px;
+}
+
+.table-Mokona-filters tr:nth-child(2) td {
+    padding-top: 10px;
+}
+
+.table-Mokona {
+    font-size: 12px;
+}
+
+.table-Mokona > thead > tr > th {
+    border-bottom: 1px solid #444;
+    white-space: nowrap;
+    font-weight: normal;
+    padding-bottom: 15px;
+}
+
+.table-Mokona > tbody > tr > td {
+    padding: 6px;
+}
+
+.table-Mokona button.btn-default {
+    background-color: transparent;
+    border-radius: 0;
+    color: #000;
+    border: 0;
+    vertical-align: middle;
+    padding: 0;
+    font-weight: normal;
+}
+
+.table-Mokona button.btn-default:hover,
+.table-Mokona button.btn-default:focus,
+.table-Mokona button.btn-default:active {
+    background-color: transparent;
+    color: #1e4bf0;
+}
+
+@media screen and (min-width: 768px) {
+    .form-inline .form-control {
+        width: 100%;
+    }
+    .form-inline .form-group {
+        display: block;
+    }
+}
+
+/* Rendicion */
+.table-Mokona-total-values {
+    font-size: 12px;
+}
+
+.table-Mokona-total-values tr > th,
+.table-Mokona-total-values tr > td {
+    white-space: nowrap;
+    border-top: 0;
+    padding: 0 10px!important;
+}
+
+.table-Mokona-total-values tr > th:nth-child(1),
+.table-Mokona-total-values tr > td:nth-child(1) {
+    border-right: 1px solid #888;
+}

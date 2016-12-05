@@ -1,0 +1,13 @@
+﻿@using Mokona.Utils.Extensions
+@using Mokona.Entities
+
+<script type="text/javascript">
+    (function(){
+        function Enums()
+        {
+            this.eMokonatatus = @Html.Raw(ObjectExtensions.ToJson(EnumExtensions.ToObject<EMokonatatus>()));
+        }
+
+        app.value("enums", new Enums());
+    })();
+</script>

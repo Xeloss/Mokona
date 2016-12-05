@@ -1,0 +1,17 @@
+.modal-dialog .modal-content {
+    border-radius: 0;
+}
+
+.modal-footer {
+    width: 520px;
+    margin: 0 auto;
+}
+
+.modal-body {
+    width: 520px;
+    margin: 30px auto 0;
+}
+
+.modal-body label {
+    font-weight: normal;
+}

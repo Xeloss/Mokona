@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D3AA6043-4858-4D2A-AD57-6C5CA63C8948}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Mokona.Core</RootNamespace>
+    <AssemblyName>Mokona.Core</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Autofac">
+      <HintPath>..\packages\Autofac.3.5.2\lib\net40\Autofac.dll</HintPath>
+    </Reference>
+    <Reference Include="Autofac.Extras.DynamicProxy2">
+      <HintPath>..\packages\Autofac.Extras.DynamicProxy2.3.0.5\lib\net40\Autofac.Extras.DynamicProxy2.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.Core, Version=3.3.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Castle.Core.3.3.3\lib\net45\Castle.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DocumentFormat.OpenXml, Version=2.5.5631.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\DocumentFormat.OpenXml.2.5\lib\DocumentFormat.OpenXml.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="RazorEngine, Version=3.9.3.0, Culture=neutral, PublicKeyToken=9ee697374c7e744a, processorArchitecture=MSIL">
+      <HintPath>..\packages\RazorEngine.3.9.3\lib\net45\RazorEngine.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="RefactorThis.GraphDiff">
+      <HintPath>..\packages\RefactorThis.GraphDiff.2.0.1\lib\RefactorThis.GraphDiff.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.0.0\lib\net45\System.Web.Razor.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase">
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Configurations\ConfigurationManager.cs" />
+    <Compile Include="DataAccess\Context\Configurations.cs" />
+    <Compile Include="DataAccess\Context\SoftDeleteableEntityContext.cs" />
+    <Compile Include="DataAccess\Context\SoftDeleteQueryVisitor.cs" />
+    <Compile Include="DataAccess\Context\ContextBuilder.cs" />
+    <Compile Include="DataAccess\Context\AuthorizedEntitiesOnlyContext.cs" />
+    <Compile Include="DataAccess\Context\AuditableEntityContext.cs" />
+    <Compile Include="DataAccess\Context\SoftDeleteInterseptor.cs" />
+    <Compile Include="DataAccess\GraphDiff\GraphDiffActions.cs" />
+    <Compile Include="DataAccess\GraphDiff\GraphDiffMappings.cs" />
+    <Compile Include="DataAccess\Context\EntityContextTransaction.cs" />
+    <Compile Include="DataAccess\Context\Interfaces\ITransaction.cs" />
+    <Compile Include="DataAccess\Context\Interfaces\IDBContext.cs" />
+    <Compile Include="DataAccess\Context\UntrackedContext.cs" />
+    <Compile Include="DataAccess\Context\EntityContext.cs" />
+    <Compile Include="DataAccess\Context\ContextHelper.cs" />
+    <Compile Include="DataAccess\GraphDiff\Mappings\CompanyGraphDiffSettings.cs" />
+    <Compile Include="DataAccess\GraphDiff\Mappings\BaseGraphDiffSetting.cs" />
+    <Compile Include="DataAccess\GraphDiff\Mappings\IGraphDiffSetting.cs" />
+    <Compile Include="DataAccess\Repositories\Base\BasicRepository.cs" />
+    <Compile Include="DataAccess\Repositories\Interfaces\ISecurityRepository.cs" />
+    <Compile Include="DataAccess\Repositories\SecurityRepository.cs" />
+    <Compile Include="DataAccess\Repositories\Interfaces\IRepository.cs" />
+    <Compile Include="Exceptions\EntityNotFoundException.cs" />
+    <Compile Include="Exceptions\HttpApplicationException.cs" />
+    <Compile Include="Exceptions\UnauthorizedException.cs" />
+    <Compile Include="Exceptions\TechnicalException.cs" />
+    <Compile Include="Exceptions\BusinessException.cs" />
+    <Compile Include="IoC\ContainerAccessor.cs" />
+    <Compile Include="IoC\ServicesModule .cs" />
+    <Compile Include="IoC\Interceptors\AutomaticSaveChangesAttribute.cs" />
+    <Compile Include="IoC\Interceptors\InterceptorState.cs" />
+    <Compile Include="IoC\Interceptors\AutomaticSaveChangesInterceptor.cs" />
+    <Compile Include="IoC\RepositoriesModule.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Security\UserPrincipal.cs" />
+    <Compile Include="Security\AuthorizationPolicies.cs" />
+    <Compile Include="Security\AuthorizationPolicy.cs" />
+    <Compile Include="Security\AuthorizationRule.cs" />
+    <Compile Include="Services\Base\CacheService.cs" />
+    <Compile Include="Services\Base\BasicService.cs" />
+    <Compile Include="Services\CompanyService.cs" />
+    <Compile Include="Services\DTOs\PageContext.cs" />
+    <Compile Include="Services\DTOs\ReportResult.cs" />
+    <Compile Include="Services\Interfaces\ICompanyService.cs" />
+    <Compile Include="Services\Interfaces\IEmailService.cs" />
+    <Compile Include="Services\Interfaces\ISecurityService.cs" />
+    <Compile Include="Services\Interfaces\IService.cs" />
+    <Compile Include="Services\Interfaces\ICacheService.cs" />
+    <Compile Include="Services\SecurityService.cs" />
+    <Compile Include="Services\EmailService.cs" />
+    <Compile Include="Utils\Email\EmailSender.cs" />
+    <Compile Include="Utils\Email\IEmailDataProvider.cs" />
+    <Compile Include="Utils\Email\IEmailSender.cs" />
+    <Compile Include="Utils\Email\VerificationEmailProvider.cs" />
+    <Compile Include="Utils\EncryptionHelper.cs" />
+    <Compile Include="Utils\ExcelExporter.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Mokona.Entities\Mokona.Entities.csproj">
+      <Project>{f846e1c4-fdf7-41f1-8139-9de77ddd66fe}</Project>
+      <Name>Mokona.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Mokona.Utils\Mokona.Utils.csproj">
+      <Project>{0f77c9c6-d886-44d2-ad85-d0bc1d96d4b9}</Project>
+      <Name>Mokona.Utils</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

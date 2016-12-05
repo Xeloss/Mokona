@@ -1,0 +1,743 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Dashboard_Index_ApproveModal_ButtonApprove" xml:space="preserve">
+    <value>Aprobar</value>
+  </data>
+  <data name="Dashboard_Index_ApproveModal_ButtonCancel" xml:space="preserve">
+    <value>Cancelar</value>
+  </data>
+  <data name="Dashboard_Index_ApproveModal_LabelAmount" xml:space="preserve">
+    <value>Monto total a aprobar</value>
+  </data>
+  <data name="Dashboard_Index_ApproveModal_Title" xml:space="preserve">
+    <value>¿Está seguro que desea aprobar el siguiente importe?</value>
+  </data>
+  <data name="Dashboard_Index_ButtonApprove" xml:space="preserve">
+    <value>Aprobar</value>
+  </data>
+  <data name="Dashboard_Index_ButtonPay" xml:space="preserve">
+    <value>Pagar</value>
+  </data>
+  <data name="Dashboard_Index_ButtonReject" xml:space="preserve">
+    <value>Rechazar</value>
+  </data>
+  <data name="Dashboard_Index_ButtonSearch" xml:space="preserve">
+    <value>Filtrar</value>
+  </data>
+  <data name="Dashboard_Index_ButtonViewCards" xml:space="preserve">
+    <value>Tarjetas</value>
+  </data>
+  <data name="Dashboard_Index_ButtonViewTable" xml:space="preserve">
+    <value>Tabla</value>
+  </data>
+  <data name="Dashboard_Index_DownloadExcel" xml:space="preserve">
+    <value>Descargar</value>
+  </data>
+  <data name="Dashboard_Index_InputDateFrom" xml:space="preserve">
+    <value>Desde</value>
+  </data>
+  <data name="Dashboard_Index_InputDateTo" xml:space="preserve">
+    <value>Hasta</value>
+  </data>
+  <data name="Dashboard_Index_InputEmployee" xml:space="preserve">
+    <value>Empleado</value>
+  </data>
+  <data name="Dashboard_Index_InputExpenseReportId" xml:space="preserve">
+    <value>N° Rendición</value>
+  </data>
+  <data name="Dashboard_Index_InputExpenseType" xml:space="preserve">
+    <value>Tipo de Gasto</value>
+  </data>
+  <data name="Dashboard_Index_InputRecordCount" xml:space="preserve">
+    <value>Filas</value>
+  </data>
+  <data name="Dashboard_Index_LabelApprovedCount" xml:space="preserve">
+    <value>Aprobados</value>
+  </data>
+  <data name="Dashboard_Index_LabelAssociatedEMokonaCount" xml:space="preserve">
+    <value>Total de Gastos Asociados:</value>
+  </data>
+  <data name="Dashboard_Index_LabelLastReports" xml:space="preserve">
+    <value>Últimas Rendiciones</value>
+  </data>
+  <data name="Dashboard_Index_LabelPendingCount" xml:space="preserve">
+    <value>Pendientes</value>
+  </data>
+  <data name="Dashboard_Index_LabelRejectedCount" xml:space="preserve">
+    <value>Rechazados</value>
+  </data>
+  <data name="Dashboard_Index_LabelSelectedEMokonaReports" xml:space="preserve">
+    <value>seleccionados</value>
+  </data>
+  <data name="Dashboard_Index_LinkViewEMokonaReportDetail" xml:space="preserve">
+    <value>Ver detalle</value>
+  </data>
+  <data name="Dashboard_Index_PayModal_ButtonCancel" xml:space="preserve">
+    <value>Cancelar</value>
+  </data>
+  <data name="Dashboard_Index_PayModal_ButtonPay" xml:space="preserve">
+    <value>Pagar</value>
+  </data>
+  <data name="Dashboard_Index_PayModal_LabelAmount" xml:space="preserve">
+    <value>Monto total a pagar</value>
+  </data>
+  <data name="Dashboard_Index_PayModal_Title" xml:space="preserve">
+    <value>¿Está seguro que desea pagar el siguiente importe?</value>
+  </data>
+  <data name="Dashboard_Index_RejectModal_ButtonCancel" xml:space="preserve">
+    <value>Cancelar</value>
+  </data>
+  <data name="Dashboard_Index_RejectModal_ButtonReject" xml:space="preserve">
+    <value>Rechazar</value>
+  </data>
+  <data name="Dashboard_Index_RejectModal_LabelAmount" xml:space="preserve">
+    <value>Monto total a rechazar</value>
+  </data>
+  <data name="Dashboard_Index_RejectModal_Title" xml:space="preserve">
+    <value>¿Está seguro que desea rechazar el siguiente importe?</value>
+  </data>
+  <data name="Dashboard_Index_TableHeaderAmount" xml:space="preserve">
+    <value>Monto</value>
+  </data>
+  <data name="Dashboard_Index_TableHeaderCreationDate" xml:space="preserve">
+    <value>Fecha de Creación</value>
+  </data>
+  <data name="Dashboard_Index_TableHeaderDescription" xml:space="preserve">
+    <value>Nota</value>
+  </data>
+  <data name="Dashboard_Index_TableHeaderEmployee" xml:space="preserve">
+    <value>Empleado</value>
+  </data>
+  <data name="Dashboard_Index_TableHeaderId" xml:space="preserve">
+    <value>N° rendici&amp;oacute;n</value>
+  </data>
+  <data name="Dashboard_Index_TableHeaderTitle" xml:space="preserve">
+    <value>Título</value>
+  </data>
+  <data name="EMokonaReport_Detail_LabelApproved" xml:space="preserve">
+    <value>Aprobado</value>
+  </data>
+  <data name="EMokonaReport_Detail_LabelPending" xml:space="preserve">
+    <value>Pendiente</value>
+  </data>
+  <data name="EMokonaReport_Detail_LabelRejected" xml:space="preserve">
+    <value>Rechazado</value>
+  </data>
+  <data name="EMokonaReport_Detail_LabelTotalApproved" xml:space="preserve">
+    <value>Total Aprobado</value>
+  </data>
+  <data name="EMokonaReport_Detail_LabelTotalRejected" xml:space="preserve">
+    <value>Total Rechazado</value>
+  </data>
+  <data name="EMokonaReport_Detail_Modal_ButtonApprove" xml:space="preserve">
+    <value>Aprobar</value>
+  </data>
+  <data name="EMokonaReport_Detail_Modal_ButtonCancel" xml:space="preserve">
+    <value>Cancelar</value>
+  </data>
+  <data name="EMokonaReport_Detail_Modal_ButtonReject" xml:space="preserve">
+    <value>Rechazar</value>
+  </data>
+  <data name="EMokonaReport_Detail_Modal_LabelApproveAmount" xml:space="preserve">
+    <value>Monto total a aprobar</value>
+  </data>
+  <data name="EMokonaReport_Detail_Modal_LabelRejectAmount" xml:space="preserve">
+    <value>Monto total a rechazar</value>
+  </data>
+  <data name="EMokonaReport_Detail_Modal_ParagraphApprove" xml:space="preserve">
+    <value>¿Está seguro que desea aprobar el siguiente importe?</value>
+  </data>
+  <data name="EMokonaReport_Detail_Modal_ParagraphReject" xml:space="preserve">
+    <value>¿Está seguro que desea rechazar el siguiente gasto?</value>
+  </data>
+  <data name="EMokonaReport_Detail_TableHeaderAmount" xml:space="preserve">
+    <value>Monto</value>
+  </data>
+  <data name="EMokonaReport_Detail_TableHeaderCostCenter" xml:space="preserve">
+    <value>Centro de Costos</value>
+  </data>
+  <data name="EMokonaReport_Detail_TableHeaderCreationDate" xml:space="preserve">
+    <value>Fecha de Creación</value>
+  </data>
+  <data name="EMokonaReport_Detail_TableHeaderDocumentNumber" xml:space="preserve">
+    <value>N° Doc.</value>
+  </data>
+  <data name="EMokonaReport_Detail_TableHeaderDocumentType" xml:space="preserve">
+    <value>Tipo Doc.</value>
+  </data>
+  <data name="EMokonaReport_Detail_TableHeaderExpenseType" xml:space="preserve">
+    <value>Tipo de Gasto</value>
+  </data>
+  <data name="EMokonaReport_Detail_TableHeaderStatus" xml:space="preserve">
+    <value>Estado</value>
+  </data>
+  <data name="Expense_Detail_ButtonCancel" xml:space="preserve">
+    <value>Cerrar</value>
+  </data>
+  <data name="Expense_Detail_ButtonSave" xml:space="preserve">
+    <value>Guardar</value>
+  </data>
+  <data name="Expense_Detail_FieldAmount" xml:space="preserve">
+    <value>Monto</value>
+  </data>
+  <data name="Expense_Detail_FieldCostCenter" xml:space="preserve">
+    <value>Centro de Costos</value>
+  </data>
+  <data name="Expense_Detail_FieldDescription" xml:space="preserve">
+    <value>Notas</value>
+  </data>
+  <data name="Expense_Detail_FieldDocumentType" xml:space="preserve">
+    <value>Tipo de Documento</value>
+  </data>
+  <data name="Expense_Detail_FieldExpenseDate" xml:space="preserve">
+    <value>Fecha</value>
+  </data>
+  <data name="Expense_Detail_FieldExpenseType" xml:space="preserve">
+    <value>Tipo de Gasto</value>
+  </data>
+  <data name="Expense_Detail_FieldStatus" xml:space="preserve">
+    <value>Estado:</value>
+  </data>
+  <data name="Expense_Detail_ParagraphNoAttachments" xml:space="preserve">
+    <value>No se han adjuntado recibos o boletas a este gasto.</value>
+  </data>
+  <data name="General_AllRightReserved" xml:space="preserve">
+    <value>2016. Todos los derechos reservados</value>
+  </data>
+  <data name="General_DevelopBy" xml:space="preserve">
+    <value>Desarrollado por</value>
+  </data>
+  <data name="Layout_LabelGreetings" xml:space="preserve">
+    <value>¡Hola {0}!</value>
+  </data>
+  <data name="Layout_LinkMyEMokona" xml:space="preserve">
+    <value>Mis Rendiciones</value>
+  </data>
+  <data name="Layout_LinkReports" xml:space="preserve">
+    <value>Reporte General</value>
+  </data>
+  <data name="Layout_LinkSettings" xml:space="preserve">
+    <value>Configuración</value>
+  </data>
+  <data name="Layout_LinkSignIn" xml:space="preserve">
+    <value>Iniciar Sesión</value>
+  </data>
+  <data name="Layout_LinkSignOut" xml:space="preserve">
+    <value>cerrar sesión</value>
+  </data>
+  <data name="Layout_Title" xml:space="preserve">
+    <value>Mokona</value>
+  </data>
+  <data name="Login_Index_ButtonSignIn" xml:space="preserve">
+    <value>Ingresar</value>
+  </data>
+  <data name="Login_Index_FieldCompanyId" xml:space="preserve">
+    <value>Id Empresa</value>
+  </data>
+  <data name="Login_Index_FieldPassword" xml:space="preserve">
+    <value>Contraseña</value>
+  </data>
+  <data name="Login_Index_FieldRememberMe" xml:space="preserve">
+    <value>Recordar Usuario</value>
+  </data>
+  <data name="Login_Index_FieldUsername" xml:space="preserve">
+    <value>Ingrese usuario</value>
+  </data>
+  <data name="Login_Index_LabelWelcome" xml:space="preserve">
+    <value>Bienvenido</value>
+  </data>
+  <data name="Settings_CostCenter_Button_NewCostCenter" xml:space="preserve">
+    <value>Nuevo Centro de Costos</value>
+  </data>
+  <data name="Settings_CostCenter_PopupNew_ButtonCancel" xml:space="preserve">
+    <value>Cancelar</value>
+  </data>
+  <data name="Settings_CostCenter_PopupNew_ButtonSave" xml:space="preserve">
+    <value>Guardar</value>
+  </data>
+  <data name="Settings_CostCenter_PopupNew_LabelName" xml:space="preserve">
+    <value>Centro de Costos</value>
+  </data>
+  <data name="Settings_CostCenter_PopupNew_Title" xml:space="preserve">
+    <value>Centro de Costos</value>
+  </data>
+  <data name="Settings_CostCenter_TableHeader_Actions" xml:space="preserve">
+    <value>Acciones</value>
+  </data>
+  <data name="Settings_CostCenter_TableHeader_CostCenter" xml:space="preserve">
+    <value>Centro de Costos</value>
+  </data>
+  <data name="Settings_CostCenter_Title" xml:space="preserve">
+    <value>Centro de Costos</value>
+  </data>
+  <data name="Settings_ExpenseType_ButtonCancel" xml:space="preserve">
+    <value>Cancelar</value>
+  </data>
+  <data name="Settings_ExpenseType_ButtonNewExpenseType" xml:space="preserve">
+    <value>Nuevo Tipo de Gasto</value>
+  </data>
+  <data name="Settings_ExpenseType_ButtonSave" xml:space="preserve">
+    <value>Guardar</value>
+  </data>
+  <data name="Settings_ExpenseType_LabelDefaultCostCenter" xml:space="preserve">
+    <value>Centro de Costos</value>
+  </data>
+  <data name="Settings_ExpenseType_LabelExpenseType" xml:space="preserve">
+    <value>Tipo de Gasto</value>
+  </data>
+  <data name="Settings_ExpenseType_Popupnew_Title" xml:space="preserve">
+    <value>Nuevo Tipo de Gasto</value>
+  </data>
+  <data name="Settings_ExpenseType_TableHeader_ExpenseType" xml:space="preserve">
+    <value>Tipo de Gasto</value>
+  </data>
+  <data name="Settings_ExpenseType_TableHeader_TableHeader_DefaultCostCenter" xml:space="preserve">
+    <value>Centro de Costos</value>
+  </data>
+  <data name="Settings_ExpenseType_TableHeader_TableHeader_TableHeader_Actions" xml:space="preserve">
+    <value>Acciones</value>
+  </data>
+  <data name="Settings_ExpenseType_Title" xml:space="preserve">
+    <value>Tipo de Gasto</value>
+  </data>
+  <data name="Settings_SideMenu_LinkDocumentTypes" xml:space="preserve">
+    <value>Tipos de Documentos</value>
+  </data>
+  <data name="Settings_SideMenu_LinkExpenseTypes" xml:space="preserve">
+    <value>Tipos de Gastos</value>
+  </data>
+  <data name="Settings_SideMenu_LinkCompany" xml:space="preserve">
+    <value>Compañía</value>
+  </data>
+  <data name="Settings_SideMenu_LinkUsers" xml:space="preserve">
+    <value>Usuarios</value>
+  </data>
+  <data name="Settings_SideMenu_LlinkCostCenter" xml:space="preserve">
+    <value>Centros de Costos</value>
+  </data>
+  <data name="Settings_Users_NewPopup_Title" xml:space="preserve">
+    <value>Detalle del Usuario</value>
+  </data>
+  <data name="Settings_Users_NewPopup_ButtonCancel" xml:space="preserve">
+    <value>Cancelar</value>
+  </data>
+  <data name="Settings_Users_NewPopup_ButtonSave" xml:space="preserve">
+    <value>Guardar</value>
+  </data>
+  <data name="Settings_Users_NewPopup_LabelEmail" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="Settings_Users_NewPopup_LabelLastName" xml:space="preserve">
+    <value>Apellido</value>
+  </data>
+  <data name="Settings_Users_NewPopup_LabelName" xml:space="preserve">
+    <value>Nombre</value>
+  </data>
+  <data name="Settings_Users_NewPopup_LabelRole" xml:space="preserve">
+    <value>Perfil</value>
+  </data>
+  <data name="Settings_Users_TableHeader_Actions" xml:space="preserve">
+    <value>Acciones</value>
+  </data>
+  <data name="Settings_Users_TableHeader_Email" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="Settings_Users_TableHeader_FullName" xml:space="preserve">
+    <value>Usuario</value>
+  </data>
+  <data name="Settings_Users_TableHeader_Role" xml:space="preserve">
+    <value>Rol</value>
+  </data>
+  <data name="Settings_Users_Title" xml:space="preserve">
+    <value>Usuarios</value>
+  </data>
+  <data name="SignUp_Success_Paragraph" xml:space="preserve">
+    <value>El proceso de registraci&amp;óacute;n se completo satisfactoriamente. Ya puedes iniciar sesi&amp;oacute;n usando la informaci&amp;oacute;n 
+            que nos fue brindada. Tambi&amp;eacute;n puedes usar esta misma informaci&amp;oacute;n para iniciar sesi&amp;oacute;n en la App movil. No olvides probarla.
+            &lt;br /&gt;
+            &lt;br /&gt;
+            Ahora, intenta ingresar para comenzar a usar Mokona:</value>
+  </data>
+  <data name="SignUp_Success_Title" xml:space="preserve">
+    <value>¡Bienvenido a Mokona!</value>
+  </data>
+  <data name="SignUp_User_ButtonCreate" xml:space="preserve">
+    <value>Crear</value>
+  </data>
+  <data name="SignUp_User_FieldConfirmPassword" xml:space="preserve">
+    <value>Confirmar Contraseña</value>
+  </data>
+  <data name="SignUp_User_FieldEmail" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="SignUp_User_FieldIDCompany" xml:space="preserve">
+    <value>Id de Compañia</value>
+  </data>
+  <data name="SignUp_User_FieldLastName" xml:space="preserve">
+    <value>Apellido</value>
+  </data>
+  <data name="SignUp_User_FieldName" xml:space="preserve">
+    <value>Primer Nombre</value>
+  </data>
+  <data name="SignUp_User_FieldPassword" xml:space="preserve">
+    <value>Contraseña</value>
+  </data>
+  <data name="SignUp_User_FieldUserName" xml:space="preserve">
+    <value>Nombre de Usuario</value>
+  </data>
+  <data name="SignUp_User_Title" xml:space="preserve">
+    <value>Registración</value>
+  </data>
+  <data name="SignUp_Company_FieldCompanyName" xml:space="preserve">
+    <value>Razón Social</value>
+  </data>
+  <data name="SignUp_Company_FieldCurrency" xml:space="preserve">
+    <value>Moneda de la compañía</value>
+  </data>
+  <data name="SignUp_Company_TitleAdminUser" xml:space="preserve">
+    <value>Usuario Administrador</value>
+  </data>
+  <data name="SignUp_Company_TitleCompanyInformation" xml:space="preserve">
+    <value>Información de la compañía</value>
+  </data>
+  <data name="Settings_DocumentTypes_ButtonNewDocumentType" xml:space="preserve">
+    <value>Nuevo Tipo de Documento</value>
+  </data>
+  <data name="Settings_DocumentTypes_PopUpNew_ButtonCancel" xml:space="preserve">
+    <value>Cancelar</value>
+  </data>
+  <data name="Settings_DocumentTypes_PopUpNew_ButtonSave" xml:space="preserve">
+    <value>Guardar</value>
+  </data>
+  <data name="Settings_DocumentTypes_PopUpNew_FieldName" xml:space="preserve">
+    <value>Nombre</value>
+  </data>
+  <data name="Settings_DocumentTypes_PopUpNew_Title" xml:space="preserve">
+    <value>Tipo de Documento</value>
+  </data>
+  <data name="Settings_DocumentTypes_TableHeaderActions" xml:space="preserve">
+    <value>Aciones</value>
+  </data>
+  <data name="Settings_DocumentTypes_TableHeaderDocumentType" xml:space="preserve">
+    <value>Tipo de Documento</value>
+  </data>
+  <data name="Settings_DocumentType_Title" xml:space="preserve">
+    <value>Tipos de Documentos</value>
+  </data>
+  <data name="GeneralReport_Filters_ButtonDownload" xml:space="preserve">
+    <value>Descargar</value>
+  </data>
+  <data name="GeneralReport_Filters_ButtonSearch" xml:space="preserve">
+    <value>Buscar</value>
+  </data>
+  <data name="GeneralReport_Filters_FieldCostCenter" xml:space="preserve">
+    <value>Centro de Costos</value>
+  </data>
+  <data name="GeneralReport_Filters_FieldDateFrom" xml:space="preserve">
+    <value>Desde</value>
+  </data>
+  <data name="GeneralReport_Filters_FieldDateTo" xml:space="preserve">
+    <value>Hasta</value>
+  </data>
+  <data name="GeneralReport_Filters_FieldDocumentType" xml:space="preserve">
+    <value>Tipo de Documento</value>
+  </data>
+  <data name="GeneralReport_Filters_FieldExpenseType" xml:space="preserve">
+    <value>Tipo de Gasto</value>
+  </data>
+  <data name="GeneralReport_Filters_FieldStatus" xml:space="preserve">
+    <value>Estado</value>
+  </data>
+  <data name="GeneralReport_Filters_FieldUser" xml:space="preserve">
+    <value>Empleado</value>
+  </data>
+  <data name="GeneralReport_TableHeader_Amount" xml:space="preserve">
+    <value>Monto</value>
+  </data>
+  <data name="GeneralReport_TableHeader_CostCenter" xml:space="preserve">
+    <value>Centro de Costos</value>
+  </data>
+  <data name="GeneralReport_TableHeader_Date" xml:space="preserve">
+    <value>Fecha</value>
+  </data>
+  <data name="GeneralReport_TableHeader_DocumentType" xml:space="preserve">
+    <value>Tipo de Documento</value>
+  </data>
+  <data name="GeneralReport_TableHeader_ExpenseType" xml:space="preserve">
+    <value>Tipo de Gasto</value>
+  </data>
+  <data name="GeneralReport_TableHeader_Status" xml:space="preserve">
+    <value>Estado</value>
+  </data>
+  <data name="GeneralReport_TableHeader_User" xml:space="preserve">
+    <value>Solicitante</value>
+  </data>
+  <data name="GeneralReport_Title" xml:space="preserve">
+    <value>ReporteGeneral</value>
+  </data>
+  <data name="CompanyValidation_AlfanumericsDomain" xml:space="preserve">
+    <value>Id empresa solo puede contener letras, numeros y el caracter guión bajo ( _ )</value>
+  </data>
+  <data name="CompanyValidation_EmptyCurrency" xml:space="preserve">
+    <value>La moneda de la compañia es obligatoria</value>
+  </data>
+  <data name="CompanyValidation_EmptyDomain" xml:space="preserve">
+    <value>El Id empresa es obligatorio</value>
+  </data>
+  <data name="CompanyValidation_EmptyName" xml:space="preserve">
+    <value>La razón social es obligatorio</value>
+  </data>
+  <data name="CompanyValidation_ExistsDomain" xml:space="preserve">
+    <value>El Id empresa ya se encuentra en uso</value>
+  </data>
+  <data name="CompanyValidation_LengthDomain" xml:space="preserve">
+    <value>El id empresa debe tener entre 3 y 50 caracteres</value>
+  </data>
+  <data name="CompanyValidation_LengthName" xml:space="preserve">
+    <value>La razón social debe tener entre 2 y 20 caracteres.</value>
+  </data>
+  <data name="Login_Index_Label_IWantToSignIn" xml:space="preserve">
+    <value>Quiero registrarme como</value>
+  </data>
+  <data name="Login_Index_Label_IWantToSignInAsCompany" xml:space="preserve">
+    <value>Empresa</value>
+  </data>
+  <data name="Login_Index_Label_IWantToSignInAsUser" xml:space="preserve">
+    <value>Usuario</value>
+  </data>
+  <data name="SignUpValidation_AlfanumericsLoginName" xml:space="preserve">
+    <value>El nombre de usuario solo puede contener letras, números y el caracter guión bajo ( _ )</value>
+  </data>
+  <data name="SignUpValidation_EmptyCompanyDomain" xml:space="preserve">
+    <value>El Id de empresa es obligatorio</value>
+  </data>
+  <data name="SignUpValidation_EmptyEmail" xml:space="preserve">
+    <value>El Email es obligatorio</value>
+  </data>
+  <data name="SignUpValidation_EmptyFirstName" xml:space="preserve">
+    <value>El primer nombre es obligatorio</value>
+  </data>
+  <data name="SignUpValidation_EmptyLastName" xml:space="preserve">
+    <value>El apellido es obligatorio</value>
+  </data>
+  <data name="SignUpValidation_EmptyLoginName" xml:space="preserve">
+    <value>El nombre de usuario es obligatorio</value>
+  </data>
+  <data name="SignUpValidation_EmptyPassword" xml:space="preserve">
+    <value>La contraseña es obligatoria</value>
+  </data>
+  <data name="SignUpValidation_ExistingCompanyDomain" xml:space="preserve">
+    <value>El Id empresa no corresponde a ninguna empresa en el sistema</value>
+  </data>
+  <data name="SignUpValidation_ExistsLoginName" xml:space="preserve">
+    <value>El nombre de usuario ya se encuentra en uso por otro usuario de la empresa</value>
+  </data>
+  <data name="SignUpValidation_InvalidEmail" xml:space="preserve">
+    <value>El Email es inválido</value>
+  </data>
+  <data name="SignUpValidation_LenghtCompanyDomain" xml:space="preserve">
+    <value>El Id empresa debe tener entre 3 y 50 caracteres</value>
+  </data>
+  <data name="SignUpValidation_LengthFirstName" xml:space="preserve">
+    <value>El primer nombre debe tener entre 2 y 20 caracteres</value>
+  </data>
+  <data name="SignUpValidation_LengthLastName" xml:space="preserve">
+    <value>El apellido debe tener entre 2 y 20 caracteres</value>
+  </data>
+  <data name="SignUpValidation_LengthLoginName" xml:space="preserve">
+    <value>El nombre de usuario debe tener entre 3 y 20 caracteres</value>
+  </data>
+  <data name="SignUpValidation_LengthPassword" xml:space="preserve">
+    <value>La contraseña debe tener por lo menos 4 caracteres</value>
+  </data>
+  <data name="SignUpValidation_PasswordsMismatch" xml:space="preserve">
+    <value>Las contraseñas no coinciden</value>
+  </data>
+  <data name="Expense_UnauthorizedToApproveReject" xml:space="preserve">
+    <value>El usuario actual no tiene los permisos para realizar esta acción.</value>
+  </data>
+  <data name="CostCenterValidation_EmptyName" xml:space="preserve">
+    <value>El nombre es obligatorio</value>
+  </data>
+  <data name="CostCenterValidation_ExistsId" xml:space="preserve">
+    <value>El centro de costos no existe</value>
+  </data>
+  <data name="CostCenterValidation_LengthName" xml:space="preserve">
+    <value>El nombre debe tener tener menos de 50 caracteres</value>
+  </data>
+  <data name="Settings_Company_ButtonSave" xml:space="preserve">
+    <value>Guardar</value>
+  </data>
+  <data name="Settings_Company_ButtonSaving" xml:space="preserve">
+    <value>Guardando ...</value>
+  </data>
+  <data name="Settings_Company_ButtonSuccess" xml:space="preserve">
+    <value>Guardado</value>
+  </data>
+  <data name="Login_PendingApproval_Paragraph" xml:space="preserve">
+    <value>Hola, bienvenido a Mokona. El administrador de empresa aun no ha aprovado tu cuenta.
+&lt;br /&gt;
+Te haremos saber cuando todo este listo para que puedas empezar a usar Mokona.</value>
+  </data>
+  <data name="Login_PendingApproval_Title" xml:space="preserve">
+    <value>Pendiente de Aprobación</value>
+  </data>
+  <data name="Login_VerifyEmail_Paragraph" xml:space="preserve">
+    <value>Hola, bienvenido a Mokona. Antes de poder empezar a usar Mokona debes verificar tu cuenta de email.
+Te hemos enviado por un email con las instrucciones a seguir. Recuerda revisar tu carpeta de correo no deseado o spam en caso de no encontrarlo en tu buzón de entrada.
+&lt;br /&gt;&lt;br /&gt;
+Haznos saber si tienes algun problema durante el proceso.</value>
+  </data>
+  <data name="Login_VerifyEmail_Title" xml:space="preserve">
+    <value>Verifica tu cuenta de Email</value>
+  </data>
+  <data name="Settings_Company_Title" xml:space="preserve">
+    <value>Detalle de la Compañía</value>
+  </data>
+  <data name="SignUp_CheckYourEmail_Paragraph" xml:space="preserve">
+    <value>Casi terminamos. Ahora tienes que verificar tu cuenta de correo. Ve a tu cuenta de correo y sigue las instrucciónes que te enviamos por email.
+&lt;br /&gt;
+Si el email no esta en tu buzón de entrada, recuerda revisar la carpeta de correo no deseado o spam.</value>
+  </data>
+  <data name="SignUp_CheckYourEmail_Title" xml:space="preserve">
+    <value>Revisa tu correo</value>
+  </data>
+  <data name="Verification_Fail_Paragraph" xml:space="preserve">
+    <value>Ups!, algo salió mal durante la verifición. No pudimos verificar tu cuenta, por favor ponte en contacto con tu administrador para recibir ayuda.</value>
+  </data>
+  <data name="Verification_Fail_Title" xml:space="preserve">
+    <value>Fallo la verificación</value>
+  </data>
+  <data name="Verification_Success_Paragraph" xml:space="preserve">
+    <value>Hemos verificado tu cuenta de email correctamente. Ahora solo queda esperar que el administrador de tu compañía apruebe tu usuario. Te enviaremos un correo cuando este todo listo.</value>
+  </data>
+  <data name="Verification_Success_Title" xml:space="preserve">
+    <value>Verificación Exitosa</value>
+  </data>
+  <data name="Settings_Users_ApproveButton" xml:space="preserve">
+    <value>Aprobar Cuenta</value>
+  </data>
+  <data name="Settings_Users_EditButton" xml:space="preserve">
+    <value>Editar</value>
+  </data>
+  <data name="Settings_Users_RejectButton" xml:space="preserve">
+    <value>Rechazar Cuenta</value>
+  </data>
+</root>

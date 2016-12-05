@@ -1,0 +1,23 @@
+﻿@{
+    Layout = null;
+}
+
+<!--Paginador-->
+<nav class="paginador" ng-if="state.pageCount > 1">
+    <ul class="pagination">
+        <li ng-class="{ disabled: state.currentPage == 0 }">
+            <a href="javascript:;" aria-label="Previous" ng-click="events.onPageClicked(state.currentPage - 1)"><span aria-hidden="true">«</span></a>
+        </li>
+
+        <li ng-repeat="items in methods.getPageNumbers(state.currentPage)"
+            ng-class="{ active : state.currentPage == $index }">
+            <a href="javascript:;" ng-click="events.onPageClicked($index)">
+                {{$index + 1}}
+                <span class="sr-only" ng-if="state.currentPage == $index">(current)</span>
+            </a>
+        </li>
+        <li ng-class="{ disabled: state.currentPage == (state.pageCount - 1) }">
+            <a href="javascript:;" aria-label="Next" ng-click="events.onPageClicked(state.currentPage + 1)"><span aria-hidden="true">»</span></a>
+        </li>
+    </ul>
+</nav>

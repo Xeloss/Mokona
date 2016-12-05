@@ -1,0 +1,173 @@
+.form-group {
+    margin-bottom: 10px;
+}
+
+/* Checkboxes */
+
+/* Base for label styling */
+[type="checkbox"]:not(:checked),
+[type="checkbox"]:checked {
+    position: absolute;
+    left: -9999px;
+}
+
+[type="checkbox"]:not(:checked) + label,
+[type="checkbox"]:checked + label {
+    position: relative;
+    padding-left: 25px;
+    cursor: pointer;
+}
+
+/* checkbox aspect */
+[type="checkbox"]:not(:checked) + label:before,
+[type="checkbox"]:checked + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 2px;
+    width: 14px;
+    height: 14px;
+    border: 1px solid #ccc;
+    background: #f8f8f8;
+}
+
+/* checked mark aspect */
+[type="checkbox"]:not(:checked) + label:after,
+[type="checkbox"]:checked + label:after {
+    content: '✔';
+    position: absolute;
+    top: 1px;
+    left: 2px;
+    font-size: 18px;
+    line-height: 0.8;
+    color: #4cae4c;
+    transition: all .2s;
+}
+
+/* checked mark aspect changes */
+[type="checkbox"]:not(:checked) + label:after {
+    opacity: 0;
+    transform: scale(0);
+}
+
+[type="checkbox"]:checked + label:after {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* disabled checkbox */
+[type="checkbox"]:disabled:not(:checked) + label:before,
+[type="checkbox"]:disabled:checked + label:before {
+    box-shadow: none;
+    border-color: #bbb;
+    background-color: #ddd;
+}
+
+[type="checkbox"]:disabled:checked + label:after {
+    color: #999;
+}
+
+[type="checkbox"]:disabled + label {
+    color: #aaa;
+}
+
+/* Accessibility */
+[type="checkbox"]:checked:focus + label:before,
+[type="checkbox"]:not(:checked):focus + label:before {
+    border: 1px dotted blue;
+}
+
+/* Upload File */
+
+.upload-document {
+    cursor: pointer;
+    padding: 8px;
+    font-size: 14px;
+    text-align: center;
+    border: 2px dashed #ccc;
+    color: #aaa;
+    margin: 7px 0;
+}
+
+.upload-document.uploading {
+    border-color: #999;
+    color: #aaa;
+}
+
+.upload-document-message {
+    margin: 10px 0 10px;
+    padding: 10px 10px 10px 10px;
+    color: #555;
+    background: #f2f9fe;
+    border: 1px solid;
+    border-color: #d9edfd;
+    border-radius: 3px;
+}
+
+.document-attached {
+    font-weight: 600;
+    color: #1e4bf0;
+    display: inline-block;
+}
+
+.input-group.porcentaje {
+    width: 90px;
+    height: 35px;
+    float: left;
+}
+
+input#inputPorcentaje {
+    height: 35px;
+}
+
+div.divider {
+    border-bottom: solid 1px #eee;
+    margin: 10px 0;
+}
+
+.input-group-addon .fa {
+    color: #fff;
+}
+
+.control-label-header {
+    border-bottom: 1px solid #cccccc;
+    padding-left: 8px;
+    line-height: 2;
+    margin-left: 10px;
+    margin-bottom: 0;
+    width: 96%;
+}
+
+.form-control {
+    background-color: #eeeeee;
+    border-radius: 0;
+    border: 0;
+    webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.input-group-addon {
+    background-color: #444;
+    border: 0;
+}
+
+.input-group-addon-light {
+    background-color: #eee!important;
+}
+
+.form-horizontal .has-feedback label ~ .form-control-feedback {
+    top: 0;
+}
+
+.has-error .form-control-feedback,
+.has-error .control-label {
+    color: #ff9997;
+}
+
+.form-group span.help-block.error-msg {
+    display: none;
+}
+.form-group.has-error span.help-block.error-msg {
+    font-size: 12px;
+    display: initial;
+}
